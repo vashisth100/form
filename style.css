@@ -1,0 +1,69 @@
+body{
+    background: url("/image\ copy\ 2.png");
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin-inline-start: 10px;
+
+}
+form{
+    max-width: 500px;
+    margin: 0;
+    padding: 20px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form h2{
+    text-align: center;
+    color: #000814;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+form label{
+    display: block;
+    margin-bottom: 8px;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #111;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: rgba(216, 4, 4, 0.933);
+    box-shadow: 0 0 10px rgba(224, 221, 12, 0.781);
+}
+
+form button {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to top, #ffb4a2, #858ae3);
+    width: 100%;
+    padding: 10px;
+
+}
+form button:hover{
+    animation: bounce 0.5s ease-in;
+}
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    
+}
